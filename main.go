@@ -93,7 +93,7 @@ func calculateFileHash(filePath string) (string, error) {
 		return "", err
 	}
 
-	// Перемістіть вказівник файлу на початок
+	// Переміщує вказівник файлу на початок
 	_, err = file.Seek(0, 0)
 	if err != nil {
 		return "", err
